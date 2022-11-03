@@ -1,11 +1,12 @@
 body{
-    background: -webkit-linear-gradient(90deg, #4e287a,#47439a,#345db8);
-    background: linear-gradient(90deg, #4e287a,#47439a,#345db8);
-    /*background-size: 400% 400%;
-	animation: gradient 20s ease infinite;*/
+    background: -webkit-linear-gradient(90deg, #345db8,#47439a,#4e287a);
+    background: linear-gradient(90deg, #345db8,#47439a,#4e287a);
+    background-size: 400% 400%;
+	animation: gradient 120s ease infinite;
+	font-family: 'Quattrocento Sans', sans-serif;
     color: #fff!important;
 }
-/*@keyframes gradient {
+@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -15,4 +16,52 @@ body{
 	100% {
 		background-position: 0% 50%;
 	}
-}*/
+}
+
+.navbar-brand{
+	font-size: 2em!important;
+}
+/*-- button-search  --*/
+.btn-search svg{
+	margin-right: 10px;
+}
+.btn-search{
+	display: flex!important;
+    align-items: center;
+	border: 1px solid #ced4da!important;
+	color: #ced4da!important;
+}
+.btn-search:hover{
+	border: 1px solid #fff!important;
+	color: #fff!important;
+}
+.section-welcome{
+	padding-top: 50px;
+    text-align: center;
+}
+.btn-write {
+    border: 1px solid #ced4da;
+    color: #ced4da;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.btn-write svg{
+	margin-right: 10px;
+}
+.btn-write:hover {
+    border: 1px solid #ced4da;
+	background: white;
+    color: #000;
+}
+
+@media (max-width: 1199px){
+	.navbar-brand{
+	font-size: 1.2em!important;
+	}
+}
+@media (max-width: 768px){
+	.section-welcome {
+		padding-top: 10px;
+	}
+}
