@@ -1,11 +1,12 @@
 body{
     background: -webkit-linear-gradient(90deg, #345db8,#47439a,#4e287a);
     background: linear-gradient(90deg, #345db8,#47439a,#4e287a);
-    background-size: 400% 400%;
-	animation: gradient 120s ease infinite;
+    /*background-size: 400% 400%;
+	animation: gradient 120s ease infinite;*/
 	font-family: 'Quattrocento Sans', sans-serif;
     color: #fff!important;
 }
+/*
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -16,8 +17,7 @@ body{
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
+}*/
 .navbar-brand{
 	font-size: 2em!important;
 }
@@ -35,6 +35,9 @@ body{
 	border: 1px solid #fff!important;
 	color: #fff!important;
 }
+/*-- button-search-END --*/
+
+/*-- section-welcome-START --*/
 .section-welcome{
 	padding-top: 50px;
     text-align: center;
@@ -45,16 +48,30 @@ body{
     background: none;
     padding: 10px 20px;
     border-radius: 5px;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .btn-write svg{
 	margin-right: 10px;
 }
 .btn-write:hover {
-    border: 1px solid #ced4da;
-	background: white;
-    color: #000;
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+/*-- section-welcome-END --*/
+
+/*-- section-articles-START --*/
+.articles-img{
+	width:100%
+}
+.articles-element{
+box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
 
+/*-- section-articles-END --*/
+
+
+/*-- MEDIA --*/
 @media (max-width: 1199px){
 	.navbar-brand{
 	font-size: 1.2em!important;
